@@ -3,59 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab01_2</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        table {
-            border: solid gainsboro;
-        }
-
-        .login-form__email input{
-            margin-left: 50px;
-        }
-s
-        .login-form__password input {
-            margin-left: 27px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="login-form">
-            <form action="http://web-tdtu.herokuapp.com/lab01/login.php"" method="POST">
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td>
-                            <input type="email" name="email" placeholder="email@domain.com" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td>
-                            <input type="password" name="password" id="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Remember me</td>
-                        <td>
-                            <input type="checkbox" id="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <button>Login</button>
-                            <div>Not registered? <a href="#">Create an account</a></div>
-                            <div>Forgot your password? <a href="#">Click here to reset</a></div>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-    </div>
+    <form action="http://web-tdtu.herokuapp.com/lab01/login.php" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="email@domain.com" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="remember">Remember me</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="" id="remember">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                    <div>
+                        Not registered? <a href="#">Create an account</a>
+                    </div>
+                    <div>
+                        Forgot your password? <a href="#">Click here to reset</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
