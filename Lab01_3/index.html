@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://web-tdtu.herokuapp.com/lab01/register.php" method="post" class="register-form">
+        <table>
+            <tr>
+                <td>Your Name</td>
+                <td>
+                    <input type="text" name="name" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td>
+                    <input type="email" name="email" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td>
+                    <input type="date" name="birthday" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Birhtime</td>
+                <td>
+                    <input type="time" name="birhtime" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>From</td>
+                <td>
+                    <select name="country" id="">
+                        <option value="0" selected="selected">Select a country</option>
+                        <optgroup label="Asia">
+                            <option value="1">Vietnam</option>
+                            <option value="2">Laos</option>
+                            <option value="3">Cambodia</option>
+                            <option value="4">Singapore</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="5">France</option>
+                            <option value="6">Belgium</option>
+                            <option value="7">Italy</option>
+                            <option value="8">Finland</option>
+                            <option value="9">Ireland</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;">Favorite IDE</td>
+                <td>
+                    <div>
+                        <input type="checkbox" name="favorite_ide" id="Visual Studio Code">
+                        <label for="Visual Studio Code">Visual Studio Code</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favorite_ide" id="Sublime Text">
+                        <label for="Sublime Text">Sublime Text</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favorite_ide" id="Eclipse">
+                        <label for="Eclipse">Eclipse</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favorite_ide" id="Atom">
+                        <label for="Atom">Atom</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="favorite_ide" id="Intelij Idea">
+                        <label for="Intelij Idea">Intelij Idea</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>TOEIC Score</td>
+                <td>
+                    <input type="range" name="toeic" id="" max="990" step="5">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;">Message</td>
+                <td>
+                    <textarea name="message" id="" cols="22" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>Register</button>
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
